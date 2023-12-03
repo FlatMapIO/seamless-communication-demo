@@ -26,9 +26,20 @@ Run demo
 ```
 
 
-# Unity.cpp
+# unity.cpp
 
 Build unity.cpp CUDA
 ```shell
-/script/build-unitycpp.sh
+./script/build-unitycpp.sh
+env +github.com/libsndfile/libsndfile
+./bin/unity -h
 ```
+
+Run unity.cpp
+
+```shell
+./bin/unity -m models/seamlessM4T_v2_large.pt --text
+```
+
+# TODO
+- [ ] `FileNotFoundError: Shared library with base name 'fairseq2_cpp' not found in /workspaces/seamless-communication-demo/seamless_communication/ggml/build/examples/unity`

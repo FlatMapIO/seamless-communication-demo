@@ -3,7 +3,9 @@
   "image": "huodon/cuda-devel:12.2.2",
   "runArgs": [
     "--gpus",
-    "all"
+    "all",
+    "--shm-size",
+    "1g"
   ],
   "hostRequirements": {
     "gpu": "optional"
