@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-
 eval "$(pkgx --shellcode)"
-
-env +python@3.11 +github.com/libsndfile/libsndfile
 
 source .venv/bin/activate
 

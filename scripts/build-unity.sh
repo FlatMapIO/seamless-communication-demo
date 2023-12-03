@@ -2,8 +2,6 @@
 
 eval "$(pkgx --shellcode)"
 
-env +python@3.11 +cmake +git +github.com/libsndfile/libsndfile
-
 ROOT=$(pwd)
 
 if [[ ! -d seamless_communication ]]; then
@@ -29,12 +27,12 @@ fi
 echo ">> Build unity.cpp with [$BLAS]"
 
 cmake $BLAS \
+    -DGGML_BUILD_EXAMPLES=ON \
     -DBUILD_SHARED_LIBS=On \
 	  -DCMAKE_BUILD_TYPE=Release \
 	  -DCMAKE_CXX_FLAGS="-g2 -fno-omit-frame-pointer" \
     ..
-
-make -j4 unity # Interactive Console
+cmake --build .
 
 
 cd $ROOT

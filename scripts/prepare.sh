@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 eval "$(pkgx --shellcode)"
-env +python@3.11 +git
 
 python -m venv .venv
 PIP=".venv/bin/pip"

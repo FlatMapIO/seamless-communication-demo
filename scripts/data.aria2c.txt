@@ -9,7 +9,8 @@ https://huggingface.co/audo/seamless-m4t-v2-large/resolve/main/exp.pt
   out=./models/m2m_expressive_unity.pt
 https://huggingface.co/audo/seamless-m4t-v2-large/resolve/main/mel.pt
   out=./models/pretssel_melhifigan_wm-final.pt
-
+https://dl.fbaipublicfiles.com/seamless/models/seamlessM4T_large.ggml
+  out=./models/seamlessM4T_large.ggml
 # assets
 https://huggingface.co/spaces/facebook/seamless-expressive/resolve/main/assets/sample_input.mp3
   out=./assets/sample_input.mp3

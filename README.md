@@ -1,6 +1,5 @@
 # Seamless communication Demo
 
-> Fork from https://colab.research.google.com/github/camenduru/seamless-m4t-colab/blob/main/seamless_expressive_v2_colab.ipynb#scrollTo=VjYy0F2gZIPR
 
 # Setup
 
@@ -30,15 +29,19 @@ Run demo
 
 Build unity.cpp CUDA
 ```shell
-./script/build-unitycpp.sh
-env +github.com/libsndfile/libsndfile
-./bin/unity -h
+./script/build-unity.sh
+ls ./bin
+
+./scripts/unity -h
 ```
 
 Run unity.cpp
 
 ```shell
-./bin/unity -m models/seamlessM4T_v2_large.pt --text
+$bash ./scripts/unity -m models/seamlessM4T_v2_large.ggml
+
+$unity ./assets/sample_input.mp3 to jpn
+
 ```
 
 # TODO

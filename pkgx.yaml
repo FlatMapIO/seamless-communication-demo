@@ -1,0 +1,9 @@
+dependencies:
+  - cmake
+  - git
+  - python@3.11
+  - aria2.github.io
+  - github.com/libsndfile/libsndfile
+
+env:
+  SHELL=fish
