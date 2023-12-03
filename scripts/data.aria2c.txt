@@ -1,0 +1,25 @@
+# models
+https://huggingface.co/facebook/seamless-m4t-v2-large/resolve/main/seamlessM4T_v2_large.pt
+  out=./models/seamlessM4T_v2_large.pt
+https://huggingface.co/facebook/seamless-m4t-v2-large/resolve/main/spm_char_lang38_tc.model
+  out=./models/spm_char_lang38_tc.model
+https://huggingface.co/facebook/seamless-m4t-v2-large/resolve/main/vocoder_v2.pt
+  out=./models/vocoder_v2.pt
+https://huggingface.co/audo/seamless-m4t-v2-large/resolve/main/exp.pt
+  out=./models/m2m_expressive_unity.pt
+https://huggingface.co/audo/seamless-m4t-v2-large/resolve/main/mel.pt
+  out=./models/pretssel_melhifigan_wm-final.pt
+
+# assets
+https://huggingface.co/spaces/facebook/seamless-expressive/resolve/main/assets/sample_input.mp3
+  out=./assets/sample_input.mp3
+https://huggingface.co/spaces/facebook/seamless-expressive/resolve/main/assets/sample_input_2.mp3
+  out=./assets/sample_input_2.mp3
+https://raw.githubusercontent.com/camenduru/seamless-expressive-hf/main/assets/Excited-English.wav
+  out=./assets/Excited-English.wav
+https://raw.githubusercontent.com/camenduru/seamless-expressive-hf/main/assets/FastTalking-French.wav
+  out=./assets/FastTalking-French.wav
+https://raw.githubusercontent.com/camenduru/seamless-expressive-hf/main/assets/Sad-English.wav
+  out=./assets/Sad-English.wav
+https://raw.githubusercontent.com/camenduru/seamless-expressive-hf/main/assets/Whisper-English.wav
+  out=./assets/Whisper-English.wav

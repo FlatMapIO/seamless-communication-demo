@@ -1,0 +1,26 @@
+# Seamless Expressive Demo
+
+> Fork from https://colab.research.google.com/github/camenduru/seamless-m4t-colab/blob/main/seamless_expressive_v2_colab.ipynb#scrollTo=VjYy0F2gZIPR
+
+# Setup
+
+Downlaod models and assets
+
+```shell
+./scrips/download.sh
+```
+
+Open . in devcontainer
+
+
+# Run demo
+
+Install dependencies
+```shell
+./scripts/prepare.sh
+```
+
+Run demo
+```shell
+./scripts/start.sh
+```

@@ -1,0 +1,4 @@
+models
+assets
+.venv
+**/__pycache__

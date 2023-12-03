@@ -1,0 +1,53 @@
+{
+  "name": "vscode-cuda",
+  "image": "huodon/cuda-devel:12.2.2",
+  "runArgs": [
+    "--gpus",
+    "all"
+  ],
+  "hostRequirements": {
+    "gpu": "optional"
+  },
+  "remoteEnv": {
+    "IS_CONTAINER": "true",
+    "MODULAR_HOME": "${containerEnv:HOME}/.modular",
+    // if TZ set to Asia/Shanghai, will use china source mirror
+    "TZ": "Asia/Shanghai"
+  },
+  // "updateContentCommand": "fish .devcontainer/update.fish",
+  // "postAttachCommand": "bash -c 'eval \"$(pkgx --shellcode)\"; dev; fish -l'",
+  "mounts": [
+    "source=/home/linuxbrew/,target=/home/linuxbrew,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/dotconfig,target=/home/sa/dotconfig,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.cache,target=/home/sa/.cache,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.vscode-server,target=/home/sa/.vscode-server,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.codeium/,target=/home/sa/.codeium/,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.config/,target=/home/sa/.config/,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.local/,target=/home/sa/.local/,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.bun/install,target=/home/sa/.bun/install,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.gitconfig,target=/home/sa/.gitconfig,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.pkgx,target=/home/sa/.pkgx,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.modular,target=/home/sa/.modular,type=bind,consistency=cached"
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "ruff.lint.run": "onSave",
+        "[python]": {
+          "editor.defaultFormatter": "charliermarsh.ruff"
+        }
+      },
+      "extensions": [
+        "Codeium.codeium",
+        "charliermarsh.ruff",
+        "modular-mojotools.vscode-mojo",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.vscode-jupyter-slideshow"
+      ]
+    }
+  }
+}
