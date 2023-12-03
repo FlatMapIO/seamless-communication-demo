@@ -1,4 +1,4 @@
-# Seamless Expressive Demo
+# Seamless communication Demo
 
 > Fork from https://colab.research.google.com/github/camenduru/seamless-m4t-colab/blob/main/seamless_expressive_v2_colab.ipynb#scrollTo=VjYy0F2gZIPR
 
@@ -22,5 +22,13 @@ Install dependencies
 
 Run demo
 ```shell
-./scripts/start.sh
+./scripts/run-expressive.sh
+```
+
+
+# Unity.cpp
+
+Build unity.cpp CUDA
+```shell
+/script/build-unitycpp.sh
 ```
